@@ -1,4 +1,4 @@
-# Terminology
+## Terminology
 ### 声明式（Declaration）
 > 对象&类：告诉编译器名称和类型\
 > 函数：告诉编译器函数的参数和返回类型
@@ -23,11 +23,12 @@ std::size_t numDigits(int number)   // 函数定义式
 class Widget                        // class定义式
 {
     /* Members here */
-}
+};
 ```
 
 ### 初始化（Initialization）
 > 给予对象初值
+
 - **构造函数**：初始化用户自定义class的对象
     - default：或没有参数，或每个参数都有缺省值
     - explicit：阻止隐式（implicit）类型转换，允许显式类型转换
@@ -57,15 +58,15 @@ doSomething(28);    // Error!!!
 ```
 
 ### 命名习惯
-> lhs：left-hand side\
-> rhs：right-hand side\
-> pt：pointer to T
+- **lhs**：left-hand side
+- **rhs**：right-hand side
+- **pt**：pointer to T
+- **rt**：reference to T
 
 ```
 const Rational operator* (const Rational& lhs, const Rational& rhs);
-class Airplane;
 
 a * b;          // a = lhs, b = rhs
 Widget* pw;     // pw = "ptr to Widget"
-Airplane* pa;   // pa = "ptr to Airplane"
+Widget& tw;     // pt = "reference to Widget"
 ```
